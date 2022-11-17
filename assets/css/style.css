@@ -1,0 +1,79 @@
+* {
+    font-family: "'DM Sans', sans-serif";
+    margin: 5px;
+}
+
+/* Header Section */
+
+header {
+    border: 100px blue;
+    border-radius: 10%;
+    margin: 10px;
+}
+
+header div {
+    border-radius: 25px;
+    border: 5px solid darkgoldenrod;
+    padding: 20px;
+    text-align: center;
+
+}
+
+header div *{
+    display: inline-block;
+    padding: 10px;
+}
+
+#portrait {
+    position: relative;
+    top: -15px;
+    float: left;
+    border-radius: 50%;
+    width: 100px;
+    text-align: left;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+header div nav {
+    font-size: 20px;
+}
+
+/* About  Section*/
+
+.row {
+    display: flex;
+}
+
+.left {
+    flex: 25%;
+}
+  
+.right {
+    flex: 75%;
+}
+
+td {
+    padding: 15px;
+  }
+/* Projects Section */
+.screenshots {
+    width: 75%;
+    border: 5px solid darkgoldenrod;
+}
+
+.flex-projects {
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.big-flex {
+    flex-grow: 2;
+}
+
+/* Footer Section */
+#message {
+    height: 200px;
+}
