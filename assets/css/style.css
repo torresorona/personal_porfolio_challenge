@@ -1,14 +1,13 @@
 * {
     font-family: "'DM Sans', sans-serif";
+    font-size: 20px;
     margin: 5px;
 }
 
 /* Header Section */
 
 header {
-    border: 100px blue;
-    border-radius: 10%;
-    margin: 10px;
+    width: 100%;
 }
 
 header div {
@@ -39,12 +38,23 @@ h1 {
 
 header div nav {
     font-size: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
 }
 
 /* About  Section*/
 
 .row {
     display: flex;
+    flex-direction: row;
 }
 
 .left {
@@ -58,22 +68,66 @@ header div nav {
 td {
     padding: 15px;
   }
+
 /* Projects Section */
 .screenshots {
-    width: 75%;
+    width: 100%;
     border: 5px solid darkgoldenrod;
+    position: relative;
+
+}
+
+.project {
+    width: 40%;
+    text-align: center;
+    padding-right: 20px;
 }
 
 .flex-projects {
     display: flex;
-    flex-flow: column wrap;
-}
-
-.big-flex {
-    flex-grow: 2;
+    flex-flow: row wrap;
 }
 
 /* Footer Section */
 #message {
     height: 200px;
 }
+
+/* Media Queries */
+
+
+@media screen and (max-width: 768px) {
+    header div nav {
+        font-size: 20px;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+    }
+
+    body {
+        display: flex;
+        flex-flow: row wrap;
+        align-content: center;
+    }
+
+    .row {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .flex-projects {
+        width: 100%;
+    }
+
+    section {
+        width: 100%;
+    }
+  }
